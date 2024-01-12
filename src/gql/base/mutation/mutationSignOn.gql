@@ -1,0 +1,8 @@
+mutation signOn($uid: String!) {
+  signOn(uid: $uid) {
+    token
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.disclosure-wrap {
+  display: flex;
+  flex-direction: column;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+}
+
+.disclosure {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #DDD;
+  background: #FFF;
+}
+
+.disclosure > .arrow {
+  position: absolute;
+  z-index: 99;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.disclosure-content-wrap {
+  overflow: hidden;
+}
+
+.disclosure-content-wrap.active {
+  border-top: 1px solid #DDD;
+}
+
+.disclosure-head,
+.disclosure-content {
+  padding: 16px;
+}
+
+.disclosure-content > .mgt16:first-child {
+  margin-top: 0px !important;
+}
+
+.disclosure-content > .mgt16:last-child {
+  margin-bottom: 0px !important;
+}

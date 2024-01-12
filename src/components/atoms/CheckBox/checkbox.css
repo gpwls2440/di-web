@@ -1,0 +1,33 @@
+
+.checkbox-wrap {
+  position: relative;
+  display: inline-block;
+  z-index: 9;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] + label > span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url('/svg/checkbox-default.svg') no-repeat;
+}
+input[type='checkbox']:checked + label > span {
+  background: url('/svg/checkbox-selected.svg') no-repeat;
+}
+
+input[type='checkbox'] + label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 22px;
+  font-size: 15px;
+  padding-left: 26px;
+}

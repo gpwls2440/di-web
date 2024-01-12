@@ -1,0 +1,28 @@
+.badge {
+  height: 20px;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.badge > span {
+  display: flex;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.badge.large {
+  height: 24px;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.badge.large > span {
+  font-size: 12px;
+  line-height: 16px;
+}
+

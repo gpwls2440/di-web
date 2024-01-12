@@ -1,0 +1,418 @@
+[
+  {
+    "holdings": [
+      {
+        "name": "LG이노텍",
+        "weight": 0.0614
+      },
+      {
+        "name": "SK텔레콤",
+        "weight": 0.0484
+      },
+      {
+        "name": "에스에프에이",
+        "weight": 0.0457
+      },
+      {
+        "name": "라온피플",
+        "weight": 0.0433
+      },
+      {
+        "name": "로보스타",
+        "weight": 0.0433
+      },
+      {
+        "name": "기타",
+        "weight": 0.7067
+      },
+      {
+        "name": "현금",
+        "weight": 0.0512
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "NAVER",
+        "weight": 0.0507
+      },
+      {
+        "name": "솔트룩스",
+        "weight": 0.0449
+      },
+      {
+        "name": "현대오토에버",
+        "weight": 0.044
+      },
+      {
+        "name": "SK텔레콤",
+        "weight": 0.0433
+      },
+      {
+        "name": "현대위아",
+        "weight": 0.043
+      },
+      {
+        "name": "기타",
+        "weight": 0.7227
+      },
+      {
+        "name": "현금",
+        "weight": 0.0514
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "NAVER",
+        "weight": 0.0537
+      },
+      {
+        "name": "현대위아",
+        "weight": 0.0442
+      },
+      {
+        "name": "에스에프에이",
+        "weight": 0.0426
+      },
+      {
+        "name": "레인보우로보틱스",
+        "weight": 0.0426
+      },
+      {
+        "name": "KT",
+        "weight": 0.041
+      },
+      {
+        "name": "기타",
+        "weight": 0.7248
+      },
+      {
+        "name": "현금",
+        "weight": 0.0511
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "NAVER",
+        "weight": 0.0483
+      },
+      {
+        "name": "SK텔레콤",
+        "weight": 0.0423
+      },
+      {
+        "name": "솔트룩스",
+        "weight": 0.0405
+      },
+      {
+        "name": "MDS테크",
+        "weight": 0.0404
+      },
+      {
+        "name": "레인보우로보틱스",
+        "weight": 0.0403
+      },
+      {
+        "name": "기타",
+        "weight": 0.7369
+      },
+      {
+        "name": "현금",
+        "weight": 0.0513
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "카카오",
+        "weight": 0.0414
+      },
+      {
+        "name": "SK텔레콤",
+        "weight": 0.0398
+      },
+      {
+        "name": "KT",
+        "weight": 0.0394
+      },
+      {
+        "name": "레인보우로보틱스",
+        "weight": 0.0388
+      },
+      {
+        "name": "에브리봇",
+        "weight": 0.0386
+      },
+      {
+        "name": "기타",
+        "weight": 0.7488
+      },
+      {
+        "name": "현금",
+        "weight": 0.0532
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "LG이노텍",
+        "weight": 0.041
+      },
+      {
+        "name": "삼성에스디에스",
+        "weight": 0.0386
+      },
+      {
+        "name": "현대위아",
+        "weight": 0.0386
+      },
+      {
+        "name": "플리토",
+        "weight": 0.0375
+      },
+      {
+        "name": "FSN",
+        "weight": 0.0373
+      },
+      {
+        "name": "기타",
+        "weight": 0.7552
+      },
+      {
+        "name": "현금",
+        "weight": 0.0518
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "NAVER",
+        "weight": 0.0383
+      },
+      {
+        "name": "현대위아",
+        "weight": 0.0367
+      },
+      {
+        "name": "로보스타",
+        "weight": 0.0366
+      },
+      {
+        "name": "플리토",
+        "weight": 0.0364
+      },
+      {
+        "name": "MDS테크",
+        "weight": 0.0362
+      },
+      {
+        "name": "기타",
+        "weight": 0.7644
+      },
+      {
+        "name": "현금",
+        "weight": 0.0514
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "KT",
+        "weight": 0.037
+      },
+      {
+        "name": "레인보우로보틱스",
+        "weight": 0.0365
+      },
+      {
+        "name": "로보티즈",
+        "weight": 0.0364
+      },
+      {
+        "name": "켐트로닉스",
+        "weight": 0.0363
+      },
+      {
+        "name": "삼성에스디에스",
+        "weight": 0.0362
+      },
+      {
+        "name": "기타",
+        "weight": 0.7662
+      },
+      {
+        "name": "현금",
+        "weight": 0.0514
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "퓨런티어",
+        "weight": 0.0344
+      },
+      {
+        "name": "엠로",
+        "weight": 0.0343
+      },
+      {
+        "name": "루닛",
+        "weight": 0.034
+      },
+      {
+        "name": "MDS테크",
+        "weight": 0.0338
+      },
+      {
+        "name": "FSN",
+        "weight": 0.0337
+      },
+      {
+        "name": "기타",
+        "weight": 0.7781
+      },
+      {
+        "name": "현금",
+        "weight": 0.0517
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "삼성에스디에스",
+        "weight": 0.0362
+      },
+      {
+        "name": "에스에프에이",
+        "weight": 0.034
+      },
+      {
+        "name": "현대위아",
+        "weight": 0.0339
+      },
+      {
+        "name": "엠로",
+        "weight": 0.0338
+      },
+      {
+        "name": "큐렉소",
+        "weight": 0.0335
+      },
+      {
+        "name": "기타",
+        "weight": 0.7772
+      },
+      {
+        "name": "현금",
+        "weight": 0.0514
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "큐렉소",
+        "weight": 0.0385
+      },
+      {
+        "name": "유진로봇",
+        "weight": 0.0385
+      },
+      {
+        "name": "나무기술",
+        "weight": 0.0384
+      },
+      {
+        "name": "KTcs",
+        "weight": 0.0383
+      },
+      {
+        "name": "레인보우로보틱스",
+        "weight": 0.0383
+      },
+      {
+        "name": "기타",
+        "weight": 0.7562
+      },
+      {
+        "name": "현금",
+        "weight": 0.0518
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "에스에프에이",
+        "weight": 0.0349
+      },
+      {
+        "name": "KT",
+        "weight": 0.0349
+      },
+      {
+        "name": "켐트로닉스",
+        "weight": 0.0349
+      },
+      {
+        "name": "이스트소프트",
+        "weight": 0.0347
+      },
+      {
+        "name": "솔트룩스",
+        "weight": 0.0346
+      },
+      {
+        "name": "기타",
+        "weight": 0.7745
+      },
+      {
+        "name": "현금",
+        "weight": 0.0515
+      }
+    ]
+  },
+  {
+    "holdings": [
+      {
+        "name": "퓨런티어",
+        "weight": 0.0334
+      },
+      {
+        "name": "SK텔레콤",
+        "weight": 0.0334
+      },
+      {
+        "name": "MDS테크",
+        "weight": 0.0334
+      },
+      {
+        "name": "KT",
+        "weight": 0.0334
+      },
+      {
+        "name": "나무기술",
+        "weight": 0.0333
+      },
+      {
+        "name": "기타",
+        "weight": 0.7811
+      },
+      {
+        "name": "현금",
+        "weight": 0.052
+      }
+    ]
+  }
+]

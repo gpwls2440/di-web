@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'KBFG Text';
+  src: url('/fonts/KBFGTextM.woff') format('woff');
+}
+@font-face {
+  font-family: 'KBFG Text';
+  font-weight: 300;
+  src: url('/fonts/KBFGTextL.woff') format('woff');
+}

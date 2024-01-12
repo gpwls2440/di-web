@@ -1,0 +1,70 @@
+/* .select {
+  display: flex;
+  width: 90px;
+  height: 28px;
+  padding: 8px 4px 8px 8px;
+  align-items: center;
+}
+
+.select > .selected {
+
+}
+
+.select > ul {
+  display: block;
+} */
+
+
+.select-wrap {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.select > .select-head-wrap {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: #FFF;
+}
+
+.select .select-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 4px 8px 8px;
+}
+
+.select .select-head > .selected {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.select .select-head .arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.select-options {
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: #FFF;
+}
+
+.select-options .select-option-wrap > .select-option {
+  padding: 4px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fff;
+}
+
+.select-options .select-option-wrap > .select-option.active,
+.select-options .select-option-wrap > .select-option:hover {
+  background-color: #F8F8F8;
+}

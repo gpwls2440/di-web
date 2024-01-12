@@ -1,0 +1,24 @@
+.histogram {
+  display: flex;
+  align-items: flex-end;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 1px;
+  height: 50px;
+}
+
+.bar {
+  flex: 1;
+  width: auto;
+  cursor: pointer;
+  height: 0%;
+}
+
+.bar.no-volume {
+  flex: 1;
+  width: auto;
+  height: 100% !important;
+  background-color: transparent !important;
+  border: 1px dashed #EEEEEE;
+}

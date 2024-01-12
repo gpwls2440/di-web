@@ -1,0 +1,70 @@
+
+.step ol{
+  display: flex;
+  margin-top: 8px;
+}
+.step ol > li {
+  display: flex;
+  height: 40px;
+  padding: 8px 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding-left: 16px;
+}
+
+.step ol > li:first-child {
+  padding-left: 0px;
+}
+
+.step ol > li.active {
+  border-bottom: 2px solid #FFDC00;
+}
+
+.step ol > li.current {
+  border-bottom: 2px solid #FFDC00;
+}
+
+.step ol > li > strong {
+  position: relative;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #888;
+}
+
+.step ol > li.active > strong {
+  font-weight: 500;
+  color: #222;
+}
+
+.step ol > li.current > strong {
+  font-weight: 700;
+}
+
+.step ol > li .circle {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #888;
+}
+
+.step ol > li.active .circle {
+  background-color: #FFDC00;
+  color: #000;
+
+}
+
+.step ol > *::before, 
+.step ol > *::after { box-sizing: border-box; }

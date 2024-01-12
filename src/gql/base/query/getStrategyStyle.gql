@@ -1,0 +1,20 @@
+query getStrategyStyle($strategyId: ID!) {
+  strategyStyle(strategyId: $strategyId) {
+    info {
+      strategy {
+        ...StrategyFactorStyleInfo
+      }
+      strategyName
+      benchmark {
+        ...StrategyFactorStyleInfo
+      }
+      benchmarkName
+      baseDate {
+        ...BaseDateInfo
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

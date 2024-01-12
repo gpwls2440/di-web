@@ -1,0 +1,30 @@
+.button-tab-wrap {
+  display: flex;
+}
+
+.button-tab-wrap > .button-tab {
+  display: flex;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+}
+
+.button-tab .button {
+  display: flex;
+  height: 32px;
+  padding: 9px 12px 8px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  color: #888;
+}
+
+
+.button-tab-wrap > .button-tab .button.active {
+  border-radius: 8px;
+  background-color: #fff;  
+}

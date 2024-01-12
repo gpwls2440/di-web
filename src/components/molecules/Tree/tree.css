@@ -1,0 +1,46 @@
+.tree-wrap {
+  display: flex;
+  flex-direction: column;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+}
+
+.tree {
+  position: relative;
+}
+
+.tree > .arrow {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  margin-top: -10px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.tree-content-wrap {
+  overflow: hidden;
+}
+
+.tree-item  {
+  padding: 4px 0px 6px 28px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  border-radius: 4px;
+}
+
+.tree-item.active {
+  background-color: #f8f8f8;
+  font-weight: 700;
+}
+
+
+.tree-item:hover {
+  background-color: #f8f8f8;
+  font-weight: 700;
+}
+

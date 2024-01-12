@@ -1,0 +1,10 @@
+query getMyStrategy($id: ID!) {
+  myStrategy(id: $id) {
+    myStrategy {
+      ...MyStrategyInfo
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

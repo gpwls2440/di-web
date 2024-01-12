@@ -1,0 +1,30 @@
+# 내 전략 누적수익률 
+## 백테스트 결과 > 수익분석 > LineChart
+
+query getMyCumulativeReturn(
+  $period: PeriodEnum
+  $interval: IntervalEnum!
+  $benchmark: UniverseEnum!
+  $myStrategyId: ID!
+  $simulationType: SimulationTypeEnum!
+) {
+  myCumulativeReturn(
+    period: $period
+    interval: $interval
+    benchmark: $benchmark
+    myStrategyId: $myStrategyId
+    simulationType: $simulationType
+  ) {
+    myCumulativeReturn {
+      chart {
+        ...MyReturnChartItemInfo
+      }
+      baseDate {
+        ...BaseDateInfo
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

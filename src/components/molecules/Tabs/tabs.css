@@ -1,0 +1,32 @@
+.tabs {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  border-bottom: 1px solid rgb(217, 217, 217);
+
+}
+
+.tabs > .tab-button.active {
+  border-bottom: 2px solid #ffcc00;
+  opacity: 1;
+  color: #333;
+}
+
+
+.tabs > .tab-button {
+  margin-bottom: -1px;
+  height: 100%;
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 32px;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 160% */
+  letter-spacing: 0.15px;
+  color: #2B2B2B;
+  opacity: 0.5;
+  padding: 8px 0px;
+}

@@ -1,0 +1,23 @@
+.radar-chart-legend-list {
+  display: flex;
+  width: initial;
+  height: initial;
+  gap: 14px;
+}
+
+.radar-chart-legend-list > li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 4px;
+}
+
+.radar-chart-legend-list > li .text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  vertical-align: baseline;
+}

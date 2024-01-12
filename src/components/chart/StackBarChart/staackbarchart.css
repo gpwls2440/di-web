@@ -1,0 +1,129 @@
+.stack-bar-chart-head-wrap {
+  height: 62px;
+}
+
+.stack-bar-chart-tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.stack-bar-chart-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 36px;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  z-index: 9;
+}
+
+.stack-bar-chart-tooltip .contents {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+
+
+.stack-bar-chart-pagenation {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  display: flex;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 16px;
+}
+
+.stack-bar-chart-pagenation-num {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 40px;
+  height: initial;
+  background-color: transparent;
+  gap: 2px;
+}
+
+.stack-bar-chart-pagenation-num span {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.stack-bar-chart-pagenation button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+}
+
+.stack-bar-chart-pagenation button:hover {
+  background-color: #fcfcfc;
+}
+
+.stack-bar-chart-legend-list {
+  display: flex;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  margin-top: 16px;
+}
+
+
+.stack-bar-chart-legend-list > ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: initial;
+  background-color: transparent;
+}
+
+.stack-bar-chart-legend-list > ul > li {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  width: initial;
+  height: 30px;
+  background-color: transparent;
+}
+
+.stack-bar-chart-legend-list > ul > li .title-wrap {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 6px;
+}
+
+.stack-bar-chart-legend-list > ul > li .text {
+  color: #222;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.stack-bar-chart-legend-list > ul > li .text.value {
+  color: #666;
+}

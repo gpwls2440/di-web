@@ -1,0 +1,249 @@
+# benchmarks, totalUsesCnt 등 전략 선택 메뉴에서 사용하지 않는 필드 제거하여 속도 개선
+fragment ThemeStrategiesTypeInfo on ThemeStrategyType {
+  __typename
+  id
+  category
+  name
+  description
+  shortDescription
+  status
+  universe {
+    ...UniverseInfo
+  }
+  returnSummary {
+    mdd
+    annualAvgVolatility
+    month3
+  }
+  baseDate {
+    ...BaseDateInfo
+  }
+  themeSrc
+  themeExtractionDate
+}
+
+fragment ThemeStrategyTypeInfo on ThemeStrategyType {
+  __typename
+  id
+  category
+  name
+  description
+  shortDescription
+  status
+  universe {
+    ...UniverseInfo
+  }
+  returnSummary {
+    mdd
+    annualAvgVolatility
+    month3
+  }
+  totalUsesCnt
+  baseDate {
+    ...BaseDateInfo
+  }
+  benchmarks
+  themeSrc
+  themeExtractionDate
+  simulationOption {
+    optimization
+    rebalancing
+  }
+}
+
+fragment SectorIndustryStrategyTypeInfo on SectorIndustryStrategyType {
+  __typename
+  id
+  category
+  name
+  description
+  shortDescription
+  status
+  sector
+  industry
+  img
+  universe {
+    ...UniverseInfo
+  }
+  returnSummary {
+    month3
+  }
+  totalUsesCnt
+  baseDate {
+    ...BaseDateInfo
+  }
+  simulationOption {
+    optimization
+    rebalancing
+  }
+}
+
+fragment MasterStrategyListTypeInfo on MasterStrategyType {
+  __typename
+  id
+  name
+  shortDescription
+  img
+}
+
+fragment MasterStrategyTypeInfo on MasterStrategyType {
+  __typename
+  id
+  category
+  name
+  description
+  shortDescription
+  status
+  img
+  masterFactors
+  masterSrc
+  totalUsesCnt
+  baseDate {
+    ...BaseDateInfo
+  }
+  simulationOption {
+    optimization
+    rebalancing
+  }
+}
+
+fragment ReturnItemInfo on ReturnItem {
+  name
+  value
+}
+
+fragment ReturnInfoItemInfo on ReturnInfoItem {
+  strategy {
+    ...ReturnItemInfo
+  }
+  benchmark {
+    ...ReturnItemInfo
+  }
+}
+
+fragment ReturnChartItemInfo on ReturnChartItem {
+  ts
+  strategy {
+    ...ReturnItemInfo
+  }
+  benchmark {
+    ...ReturnItemInfo
+  }
+}
+
+fragment RiskAssessmentItemInfo on RiskAssessmentItem {
+  name
+  cumulative
+  volatility
+  sharpe
+  mdd
+  annualAvgReturn
+  annualAvgVolatility
+}
+
+fragment RiskAssessmentEtcItemInfo on RiskAssessmentEtcItem {
+  excessReturn
+  trackingError
+  infoRatio
+}
+
+fragment ReturnRateInfo on StrategyReturnType {
+  __typename
+  benchmark {
+    ...ReturnItemInfo
+  }
+  cumulative {
+    ...ReturnItemInfo
+  }
+  month {
+    ...ReturnItemInfo
+  }
+  quarter {
+    ...ReturnItemInfo
+  }
+  half {
+    ...ReturnItemInfo
+  }
+}
+
+fragment DetailedStrategyTypeInfo on DetailedStrategyType {
+  __typename
+  name
+  description
+  returnRate {
+    ...ReturnRateInfo
+  }
+  benchmarks
+}
+
+fragment DetailedMasterStrategyTypeInfo on DetailedMasterStrategyType {
+  __typename
+  name
+  description
+  shortDescription
+  returnRate {
+    ...ReturnRateInfo
+  }
+  factors
+  src
+  img
+  benchmarks
+}
+
+fragment StrategyFactorStyleItemInfo on StrategyFactorStyleItem {
+  name
+  value
+}
+
+fragment StrategyFactorStyleInfo on StrategyFactorStyle {
+  size {
+    ...StrategyFactorStyleItemInfo
+  }
+  value {
+    ...StrategyFactorStyleItemInfo
+  }
+  momentum {
+    ...StrategyFactorStyleItemInfo
+  }
+  quality {
+    ...StrategyFactorStyleItemInfo
+  }
+  volatility {
+    ...StrategyFactorStyleItemInfo
+  }
+  beta {
+    ...StrategyFactorStyleItemInfo
+  }
+  dividend {
+    ...StrategyFactorStyleItemInfo
+  }
+  surprise {
+    ...StrategyFactorStyleItemInfo
+  }
+  liquidity {
+    ...StrategyFactorStyleItemInfo
+  }
+}
+
+fragment BaseDateInfo on BaseDate {
+  start
+  end
+}
+
+fragment WeightItemInfo on WeightItem {
+  name
+  weight
+}
+
+fragment MyReturnChartItemInfo on MyReturnChartItem {
+  ts
+  myStrategy {
+    ...ReturnItemInfo
+  }
+  strategy {
+    ...ReturnItemInfo
+  }
+  benchmark {
+    ...ReturnItemInfo
+  }
+}

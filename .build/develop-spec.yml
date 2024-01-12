@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "---------------- [Develop] Build Start ----------------"
+      - npm install -g pnpm
+      - pnpm install
+      - pnpm codegen
+  build:
+    commands:
+      - pnpm build
+      - echo "---------------- [Develop] Build End ----------------"
+  post_build:
+    commands:
+      - echo "---------------- [Develop] Deploy Start ----------------"
+      - aws s3 sync ./dist s3://develop.web.di.kbam.co.kr --delete
+      - aws cloudfront create-invalidation --distribution-id E2CXXJARJPY8BW --paths '/*'
+      - echo "---------------- [Develop] Deploy End ----------------"
+
+artifacts:
+  files:
+    - dist/**/*
+    - node_modules/**/*
+  discard-paths: yes
+  base-directory: dist

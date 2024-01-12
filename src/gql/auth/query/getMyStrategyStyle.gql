@@ -1,0 +1,37 @@
+# 내 전략 스타일 조회
+## 백테스트 결과 > 전략분석 스타일 > RadarChart
+
+query getMyStrategyStyle(
+  $myStrategyId: ID!
+  $simulationType: SimulationTypeEnum!
+) {
+  myStrategyStyle(
+    myStrategyId: $myStrategyId
+    simulationType: $simulationType
+  ) {
+    info {
+      myStrategyName
+      myStrategy {
+        ...StrategyFactorStyleInfo
+      }
+      strategy {
+        ...StrategyFactorStyleInfo
+      }
+      strategyName
+      benchmark {
+        ...StrategyFactorStyleInfo
+      }
+      benchmarkName
+      baseDate {
+        ...BaseDateInfo
+      }
+      factorInfo {
+        name
+        value
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

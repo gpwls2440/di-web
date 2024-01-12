@@ -1,0 +1,82 @@
+fragment TokenInfo on ObtainJSONWebToken {
+  token
+  payload
+  refreshExpiresIn
+}
+
+fragment ErrorInfo on Error {
+  key
+  message
+  field
+  info
+}
+
+fragment UserInfo on UserType {
+  id
+  uid
+  role
+}
+
+fragment PageInfo on PageInfo {
+  hasNextPage
+  hasPreviousPage
+  startCursor
+  endCursor
+}
+
+fragment PositionInfo on HoldingPositionItem {
+  ccid
+  name
+  code
+  sector
+  industry
+  weight
+  volume
+  price
+  share
+  isAdd
+  isWhitelist
+}
+
+fragment UniverseInfo on UniverseType {
+  name
+  country
+}
+
+
+
+
+
+## cumulative: 누적 수익률(%)
+## month1, month3, month6: 1개월/3개월/6개월 수익률(%)
+## sharpe: 샤프 지수
+## volatility: 변동성(%)
+## mdd: mdd(%)
+## annualAvgReturn: 연평균 수익률(%)
+## annualAvgVolatility: 연평균 변동성(%) 
+fragment ReturnSummaryTypeInfo on ReturnSummaryType {
+  cumulative
+  month1
+  month3
+  month6
+  sharpe
+  volatility
+  mdd
+  annualAvgReturn
+  annualAvgVolatility
+}
+
+fragment CashItemInfo on CashItem {
+  weight
+  price
+}
+
+fragment HoldingResInfo on HoldingType {
+  holdings {
+    ...PositionInfo
+  }
+  excludeHoldings {
+    ...PositionInfo
+  }
+  baseHoldings
+}

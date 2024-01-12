@@ -1,0 +1,29 @@
+# 내 전략 위험평가지수
+query getMyRiskAssessmentIndex(
+  $benchmark: UniverseEnum!
+  $myStrategyId: ID!
+  $simulationType: SimulationTypeEnum!
+) {
+  myRiskAssessmentIndex(
+    benchmark: $benchmark
+    myStrategyId: $myStrategyId
+    simulationType: $simulationType
+  ) {
+    myRiskAssessmentIndex {
+      info {
+        myStrategy {
+          ...RiskAssessmentItemInfo
+        }
+        strategy {
+          ...RiskAssessmentItemInfo
+        }
+        benchmark {
+          ...RiskAssessmentItemInfo
+        }
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

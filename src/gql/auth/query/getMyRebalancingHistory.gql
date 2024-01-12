@@ -1,0 +1,27 @@
+# 내 전략 리밸런싱 이력 조회
+## 백테스트 결과 > 리벨런싱 내역 > 
+
+query getMyRebalancingHistory($id: ID!, $simulationType: SimulationTypeEnum!) {
+  myRebalancingHistory(myStrategyId: $id, simulationType: $simulationType) {
+    myRebalancingHistory {
+      info {
+        ts
+        holdings {
+          name
+          weight
+        }
+        cash {
+          ...CashItemInfo
+        }
+      }
+      baseDate {
+        start
+        end
+      }
+      rebalancing
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

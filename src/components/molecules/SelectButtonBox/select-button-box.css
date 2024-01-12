@@ -1,0 +1,108 @@
+.select-button-box .select-button-box-warnings {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #DE092F;
+}
+
+.select-button-box .select-button-box-warnings.error {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #888;
+}
+
+
+.select-button-box ul {
+  margin-top: 20px;
+  display: grid;
+}
+
+.select-button-box ul li {
+  display: grid;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.select-button-box li button {
+  position: relative;
+  display: flex;
+  padding: 10px 0;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.select-button-box li button.active {
+  border: 1px solid #5B86D4;
+  color: #5B86D4;
+}
+
+.select-button-box li button:hover {
+  border: 1px solid #5B86D4;
+  color: #5B86D4;
+}
+
+.select-button-box li .button.input > input {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  border: none;
+  padding: 0px;
+  width: 100%;
+  padding: 0px 7px;
+  text-align: center;
+  color: #222;
+}
+.select-button-box li .button.input.active > input {
+  color: #5B86D4;
+}
+
+
+.select-button-box li .button.input.error {
+  border: 1px solid #DE092F;
+  background-color: #FDF3F5;
+}
+
+.select-button-box li .button.input.error > input {
+  color: #DE092F;
+  background-color: #FDF3F5;
+}
+
+.select-button-box li .button.input.error > input::placeholder {           
+  color: #DE092F;
+  opacity: 1;
+}
+
+.select-button-box li .button.input.error > input:focus::placeholder {
+  color: #DE092F;
+}
+
+.select-button-box li .button.input.error  .ico-warnings {
+  position: absolute;
+  left: 4px;
+}
+
+.select-button-box li .button.input > input::placeholder {           
+  color: #222;
+  opacity: 1;
+}
+
+.select-button-box li .button.input > input:focus::placeholder {
+  color: #5B86D4;
+}
+
+
+.select-button-box li .button.input > input:hover::placeholder {           
+  color: #5B86D4;
+  opacity: 1;
+}
+

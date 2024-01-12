@@ -1,0 +1,38 @@
+# 전략 보관함 리스트 호출
+
+query getMyStrategies(
+  $category: StrategyCategoryEnum
+  $status: StrategyStatusEnum
+  $keyword: String
+  $orderType: MyStrategyOrderType
+  $countries: [UniverseCountryEnum!] = [DOMESTIC]
+  $before: String
+  $after: String
+  $first: Int
+  $last: Int
+) {
+  myStrategies(
+    category: $category
+    status: $status
+    keyword: $keyword
+    orderType: $orderType
+    countries: $countries
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+  ) {
+    pageInfo {
+      ...PageInfo
+    }
+    errors {
+      ...ErrorInfo
+    }
+    edges {
+      node {
+        ...MyStrategyInfo
+      }
+      cursor
+    }
+  }
+}

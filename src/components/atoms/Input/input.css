@@ -1,0 +1,10 @@
+.input {
+  border: 1px solid #eee;
+  line-height: 20px;
+  padding: 10px;
+  color: #222;
+}
+
+.input:disabled {
+  color: #eee;
+}

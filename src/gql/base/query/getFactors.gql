@@ -1,0 +1,17 @@
+query getFactors($strategyId: ID, $universePreset: UniversePresetEnum) {
+  factors(strategyId: $strategyId, universePreset: $universePreset) {
+    factors {
+      style {
+        style
+        name
+        description
+      }
+      factors {
+        ...FactorItemInfo
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

@@ -1,0 +1,56 @@
+overwrite: true
+schema: [
+  {
+    'https://api.staging.be.di.kbam.co.kr/graphql': {
+      headers: {
+        'user-agent': 'codegen',
+      },
+    },
+  },
+]
+generates:
+  src/services/base.ts:
+    documents: ['src/gql/fragments/*.gql', 'src/gql/base/**/*.gql']
+    plugins:
+      - jsdoc
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+    hooks: 
+      afterAllFileWrite: ['prettier --write', 'eslint --fix']
+    config:
+      addInfiniteQuery: true
+      dedupeFragments: true
+      fetcher:
+        func: 'src/graphqlClient#graphqlBaseClient'
+        isReactHook: false
+        exposeQueryKeys: true
+  src/services/auth.ts:
+    documents: ['src/gql/fragments/*.gql', 'src/gql/auth/**/*.gql']
+    plugins:
+      - jsdoc
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+    hooks: 
+      afterAllFileWrite: ['prettier --write', 'eslint --fix']
+    config:
+      addInfiniteQuery: true
+      dedupeFragments: true
+      fetcher:
+        func: 'src/graphqlClient#graphqlAuthClient'
+        isReactHook: false
+        exposeQueryKeys: true
+  src/services/signOn.ts:
+    documents: ['src/gql/fragments/*.gql', 'src/gql/base/mutation/mutationSignOn.gql'] 
+    plugins:
+      - jsdoc
+      - typescript
+      - typescript-operations
+      - typescript-graphql-request
+
+    hooks: 
+      afterAllFileWrite: ['prettier --write', 'eslint --fix']
+      
+       
+

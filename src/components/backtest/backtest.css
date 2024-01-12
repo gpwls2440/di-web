@@ -1,0 +1,388 @@
+
+.backtest {
+  position: relative;
+}
+
+.backtest .box {
+  padding-top: 12px !important;
+}
+
+.backtest > h4 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  color: #444;
+}
+
+
+.backtest > .backtest-head-area {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backtest > .backtest-head-area  > .paging {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #888;
+}
+
+.backtest > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 8px;
+}
+
+.backtest > ul > li > .box:first-child {
+  margin-top: 10px;
+}
+
+.backtest > ul > li:last-child {
+  margin-right: 0px;
+}
+
+.title-wrap.yield-analysis {
+  margin-top: 26px;
+}
+
+.title-wrap.interchangeable-conversion {
+  margin-top: 36px;
+}
+
+.backtest .cumulative-return  {
+  position: relative;
+  min-height: 346px;
+}
+
+.backtest .cumulative-return .select-wrap {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+.backtest .line-chart-wrap {
+  margin-top: 8px;
+  height: 263px;
+}
+
+/* 종목구성 */
+.backtest .holding-position-all {
+  height: 638px;
+  overflow-y: auto;
+}
+
+.backtest .holding-position-all::-webkit-scrollbar {
+  display: none;
+}
+
+.backtest .holding-position-all table {
+  width: 100%;
+  text-align: left;
+}
+
+.backtest .holding-position-all table th {
+  position: sticky;
+  top: 0;
+  color: #888;
+  font-size: 15px;
+}
+
+
+.backtest .holding-position-all table td {
+  font-size: 14px;
+}
+
+.backtest .holding-position-all table th:first-child,
+.backtest .holding-position-all table td:first-child {
+  text-align: center;
+  color: #888;
+}
+
+
+.backtest .holding-position-all table th,
+.backtest .holding-position-all table td {
+  height: 42px;
+  padding: 9px 0px;
+  border-bottom: 1px solid #F0F0F0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+
+
+.backtest .holding-position-all table th:nth-child(3),
+.backtest .holding-position-all table th:nth-child(4),
+.backtest .holding-position-all table th:nth-child(5),
+.backtest .holding-position-all table tbody td:nth-child(3),
+.backtest .holding-position-all table tbody td:nth-child(4),
+.backtest .holding-position-all table tbody td:nth-child(5) {
+  text-align: right;
+}
+
+.backtest .holding-position-all table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+}
+.backtest .holding-position-all th, td {
+  padding: 0.25rem;
+}
+.backtest .holding-position-all tr.red th {
+  background: red;
+  color: white;
+}
+.backtest .holding-position-all tr.green th {
+  background: green;
+  color: white;
+}
+.backtest .holding-position-all tr.purple th {
+  background: purple;
+  color: white;
+}
+.backtest .holding-position-all th {
+  background: white;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.backtest .black-white-list-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.backtest .black-white-list-wrap > li{
+  position: relative;
+  padding-left: 15px;
+}
+
+.backtest .black-white-list-wrap > li:last-child::before {
+  top:6px;
+  left: 0px;
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 128px;
+  background-color: #ddd;
+}
+
+.backtest .black-white-list-wrap > li > .title-wrap {
+  display: flex;
+  gap: 6px;
+}
+
+.backtest .black-white-list-wrap > li > .title-wrap > .title {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.backtest .black-white-list-wrap > li > .title-wrap > .selected {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.backtest .black-white-list-wrap > li > .title-wrap > .selected > strong {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #5B86D4;
+}
+
+
+.backtest .black-white-list-wrap > li > .list-wrap {
+  margin-top: 20px;
+  height: 106px;
+  overflow-y: scroll;
+}
+
+.backtest .black-white-list-wrap > li > .list-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.backtest .black-white-list-wrap > li > .list-wrap > .white-list > li {
+  display: inline-block;
+  padding: 8px 8px 8px 4px;
+  border-radius: 4px;
+  background: #5b86d41a;
+  margin: 0px 6px 6px 0px;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #5177BC;
+}
+
+.backtest .black-white-list-wrap > li > .list-wrap > .black-list > li {
+  display: inline-block;
+  padding: 8px 8px 8px 4px;
+  border-radius: 4px;
+  background: #F4F4F4;
+  margin: 0px 6px 6px 0px;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #444;
+}
+
+.backtest .weight-info {
+  margin-top: 16px;
+  display: flex;
+  padding: 10px 8px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 2px;
+  background-color: #f8f8f8;
+}
+
+.backtest .weight-info > .weight-info-percent  {
+  display: flex;
+}
+
+.backtest .weight-info > .weight-info-percent > span {
+  position: relative;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-right: 8px;
+}
+
+.backtest .weight-info > .weight-info-percent > span:last-child {
+  margin-left: 9px;
+}
+
+.backtest .weight-info > .weight-info-percent > span:last-child::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 16px;
+  background-color: #ddd;
+  left: -9px;
+  top: 3px;
+}
+
+.backtest .weight-info > .total {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.backtest .holding-weight {
+  margin-top: 8px;
+  min-height: 396px;
+}
+
+.backtest .horizontal-stack-bar-chart {
+  margin-top: 12px;
+}
+
+.backtest .my-strategy-style > .chart {
+  height: 329px;
+}
+
+.backtest .my-strategy-style .recharts-legend-wrapper {
+  left: 0px !important;
+}
+
+.backtest .investment > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  margin-left: -22px;
+  margin-top: 23px;
+}
+
+.backtest .investment> ul li {
+  margin-left: 22px;
+}
+
+.backtest .investment > ul > li > dl {
+  display: flex;
+  line-height: 42px;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 8px 0px;
+  justify-content: space-between;
+}
+
+.backtest .investment > ul > li > dl > dt {
+  display: flex;
+  height: 26px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  align-items: center;
+}
+
+.backtest .investment > ul > li > dl.earnings {
+  padding: 8px 0px;
+}
+
+.backtest .investment > ul > li > dl.earnings > dt {
+  padding-right: 27px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.backtest .investment > ul > li > dl > dd {
+  display: flex;
+  height: 26px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  align-items: center;
+}
+
+.backtest .sector-industry  {
+  position: relative;
+  min-height: 708px;
+}
+
+.backtest .sector-industry .sector-industry-button-wrap {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  display: flex;
+}
+
+.backtest .sector-industry .sector-industry-button-wrap > li > .button {
+  display: flex;
+  width: 46px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.backtest .sector-industry .sector-industry-button-wrap > li > .button.active {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.backtest .sector-industry .preset {
+  margin-top: 63px;
+  padding-bottom: 14px;
+}
+
+.backtest .sector-industry .legend-list {
+  margin-top: 6px;
+  margin-bottom: 26px;
+}
+
+.backtest .rebalancing-history-top {
+  min-height: 278px;
+}

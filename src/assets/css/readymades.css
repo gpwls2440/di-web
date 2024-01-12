@@ -1,0 +1,104 @@
+.sector {
+  height: auto;
+}
+
+.sector .step {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 30;
+  max-height: 100vh;
+  height: 100vh;
+}
+
+
+.sector .sectors-head {
+  min-height: 55px;
+}
+
+.master-universe > ul {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.master-universe > ul > li {
+  margin-right: 14px;
+}
+
+.master-universe > ul > li:nth-child(even) {
+  margin-right: 0px;
+}
+
+.investment-standard > ul {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.investment-standard > ul > li {
+  margin-right: 14px;
+}
+
+.investment-standard > ul > li:nth-child(even) {
+  margin-right: 0px;
+}
+
+.investment-standard-selected > ol > li {
+  display: flex;
+  height: 42px;
+  padding: 8px 0px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.investment-standard-selected > ol > li .investment-standard-selected-num {
+  display: flex;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #888;
+}
+
+.investment-standard-selected > ol > li .investment-standard-selected-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px
+}
+
+.investment-standard-selected > ol > li .investment-standard-selected-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: auto;  
+}
+
+/* 투자 스타일 */
+.investment-style > ul {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+.investment-style > ul > li {
+  margin-right: 14px;
+}
+.investment-style> ul > li:nth-child(even) {
+  margin-right: 0px;
+}
+
+.investment-style > ul > li > .box .checkbox-wrap,
+.investment-style > ul > li > .box .checkbox-wrap > label {
+  width: 100%;
+}

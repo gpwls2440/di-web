@@ -1,0 +1,134 @@
+.sectors .selected-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectors > ul > li .selected-wrap > .selected {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.sectors > ul > li .selected strong {
+  font-style: normal;
+  color: #5B86D4;
+}
+
+.sectors > ul > li .selected > .selected-length {
+  position: relative;
+}
+
+.sectors > ul > li .selected > .selected-length::after {
+  content: '';
+  position: absolute;
+  right: -8.5px;
+  top: 5px;
+  width: 1px;
+  height: 9px;
+  background-color: #ddd;
+
+}
+.sectors > ul > li .selected img {
+  margin-left: 17px;
+}
+
+
+.sectors > ul {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.sectors > ul > li {
+  margin-right: 14px;
+}
+
+.sectors > ul > li:nth-child(even) {
+  margin-right: 0px;
+}
+
+.sectors > ul > li .disclosure-wrap {
+  margin-top: 6px;
+}
+
+.sectors > ul > li .box.selected {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectors > ul > li .box.selected img {
+  margin-right: 6px;
+}
+
+.sectors > ul > li .box.selected span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.sectors > ul > li .empty-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectors > ul > li .empty {
+  margin-top: 248.5px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectors > ul > li .empty .main {
+  margin-top: 12px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.sectors > ul > li .empty .sub {
+  margin-top: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  color: #444;
+}
+
+
+.sectors-head {
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.sectors-title {
+  display: flex;
+  gap: 6px;
+}
+
+.sectors-item-wrap {
+  flex-direction: column;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+}
+
+.sectors .disclosure-content > ul > li {
+  padding: 16px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sectors .disclosure-content > ul > li:first-child {
+  padding: 0px 0px 16px 0px;
+}
+
+.sectors .disclosure-content > ul > li:last-child {
+  padding: 16px 0px 0px 0px;
+  border-bottom: none;
+}

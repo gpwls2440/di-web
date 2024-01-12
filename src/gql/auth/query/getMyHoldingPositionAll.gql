@@ -1,0 +1,23 @@
+
+# 내 전략 - 종목 구성 조회
+## 백테스트 결과 > 종목 구성 조회
+
+query getMyHoldingPositionAll($id: ID!, $simulationType: SimulationTypeEnum!) {
+  myHoldingPositionAll(myStrategyId: $id, simulationType: $simulationType) {
+    myHoldingPositionAll {
+      position {
+        ...PositionInfo
+      }
+      cash {
+        ...CashItemInfo
+      }
+      baseDate {
+        start
+        end
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

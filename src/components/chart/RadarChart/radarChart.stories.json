@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "name": "시총&자산",
+      "myStrategy": 1.29,
+      "benchmark": 3.38,
+      "strategy": 1.26
+    },
+    {
+      "name": "가치",
+      "myStrategy": 2.92,
+      "benchmark": 3.04,
+      "strategy": 2.94
+    },
+    {
+      "name": "성장",
+      "myStrategy": 2.95,
+      "benchmark": 3,
+      "strategy": 2.96
+    },
+    {
+      "name": "퀄리티",
+      "myStrategy": 2.9,
+      "benchmark": 3.01,
+      "strategy": 2.92
+    },
+    {
+      "name": "변동성",
+      "myStrategy": 1.95,
+      "benchmark": 3.21,
+      "strategy": 1.96
+    },
+    {
+      "name": "시장 민감도",
+      "myStrategy": 3.17,
+      "benchmark": 3.01,
+      "strategy": 3.17
+    },
+    {
+      "name": "배당",
+      "myStrategy": 2.94,
+      "benchmark": 3.04,
+      "strategy": 2.96
+    },
+    {
+      "name": "어닝 서프라이즈",
+      "myStrategy": 2.85,
+      "benchmark": 3.03,
+      "strategy": 2.85
+    },
+    {
+      "name": "수급",
+      "myStrategy": 2.87,
+      "benchmark": 3.06,
+      "strategy": 2.84
+    }
+  ],
+  "strategyName": "프리셋(Pre-set)",
+  "benchmarkName": "KOSPI",
+  "myStrategyName": "나의 전략",
+  "baseDate": 1694530800000
+}

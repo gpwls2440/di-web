@@ -1,0 +1,167 @@
+@import "reset.css";
+@import "media.css";
+@import "common.css";
+@import "modal.css";
+@import "aside.css";
+@import "strategies";
+@import "readymades.css";
+
+
+.main {
+  display: flex;
+}
+
+
+.container-wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.container {
+  position: relative;
+  padding: 0px 30px;
+  background-color: #f8f8f8;
+}
+
+.container .content {
+  width: 1380px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container-wrap.strategies .content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-wrap.strategies .header-content {
+  width: 1014px;
+}
+
+
+.container-wrap.strategies .container {
+  background-color: #fff;
+}
+
+.felxbox {
+  display: flex;
+  flex-direction: column;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 16px;
+}
+
+
+.box-wrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  gap: 16px;
+}
+
+.box-wrap > .box {
+  float: left;
+  margin: 5px;
+  width: 33.3%;
+  min-height: 250px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.box-wrap > .box h4 {
+  color: rgb(34, 34, 34);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.box-wrap > .box h5 {
+  color: rgb(136, 136, 136);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.box-wrap > .box .box-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.box-wrap > .box dl {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.box-wrap > .box dt {
+  float: left;
+  width: 50%;
+}
+
+.box-wrap > .box dd {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  margin-top: 8px;
+  padding: 0px 30px;
+  background-color: #fff;
+}
+
+header > .header {
+  position: relative;
+  width: 1380px;
+  margin: 0 auto;
+}
+
+header > .header > .header-content > .header-title-wrap {
+  min-height: 66px;
+}
+
+header > .header > .header-content > .header-title-wrap > h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+header > .header > .header-content > .header-title-wrap > h4 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  color: #222;
+}
+header > .header > .header-content > .step {
+  margin-top: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+header > .header > .header-content > .header-status-wrap {
+  position: absolute;
+  top: 52px;
+  right:  0px;
+  display: flex;
+}
+
+header > .header > .header-content > .header-status-wrap > .header-button-wrap {
+  display: flex;
+  margin-left: 5px;
+  gap: 5px;
+  align-items: center;
+}

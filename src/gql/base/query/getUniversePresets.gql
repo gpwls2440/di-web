@@ -1,0 +1,13 @@
+query getUniversePresets($countries: [UniverseCountryEnum!] = [DOMESTIC]) {
+  universePresets(countries: $countries) {
+    universePresets {
+      name
+      displayName
+      description
+      universes
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

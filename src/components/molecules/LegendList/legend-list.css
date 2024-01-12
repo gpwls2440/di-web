@@ -1,0 +1,26 @@
+
+ul.legend-list {
+  display: flex;
+  width: initial;
+  height: initial;
+  gap: 14px;
+}
+
+ul.legend-list > li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 4px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+ul.legend-list > li > .text {
+  display: flex;
+}

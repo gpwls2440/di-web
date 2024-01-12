@@ -1,0 +1,56 @@
+fragment FactorValueItemInfo on FactorValueItem {
+  min
+  max
+}
+
+fragment HistogramItemInfo on HistogramItem {
+  stickCounts
+  range {
+    ...FactorValueItemInfo
+  }
+  factorRange {
+    ...FactorValueItemInfo
+  }
+  low {
+    ...FactorValueItemInfo
+  }
+  middle {
+    ...FactorValueItemInfo
+  }
+  high {
+    ...FactorValueItemInfo
+  }
+}
+
+fragment FactorItemInfo on FactorItem {
+  style
+  type
+  displayName
+  cmName
+  description
+  min
+  max
+  histogramData {
+    ...HistogramItemInfo
+  }
+  defaultValueInfo {
+    isChecked
+    min
+    max
+  }
+  ignoreNegative
+  img
+  comments
+}
+
+fragment FactorsTypeInfo on FactorsType {
+  style {
+    style
+    name
+    description
+  }
+  factors {
+    ...FactorItemInfo
+  }
+}
+

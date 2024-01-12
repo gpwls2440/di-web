@@ -1,0 +1,9 @@
+fragment ForwardSummaryInfo on ForwardSummary {
+  period {
+    ...BaseDateInfo
+  }
+  investmentAmount
+  valuationAmount
+  gainOrLossValuation
+  gainOrLossExchange
+}

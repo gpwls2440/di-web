@@ -1,0 +1,43 @@
+# 백테스트 결과
+
+## 상단 누적수익률
+query getDetailedMyStrategy($id: ID!, $simulationType: SimulationTypeEnum!) {
+  detailedMyStrategy(id: $id, simulationType: $simulationType) {
+    detailedMyStrategy {
+      name
+      myStrategy {
+        cumulative
+        exchangeCumulative
+      }
+      strategy {
+        cumulative
+        exchangeCumulative
+      }
+      benchmark {
+        cumulative
+        exchangeCumulative
+      }
+      benchmarks
+      baseDate {
+        ...BaseDateInfo
+      }
+      forwardSummary {
+        ...ForwardSummaryInfo
+      }
+      forwardSummaryExchange {
+        ...ForwardSummaryInfo
+      }
+      exchangeRateInfo {
+        baseDate
+        exchangeRate
+      }
+      createdExchangeRateInfo {
+        baseDate
+        exchangeRate
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

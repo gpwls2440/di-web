@@ -1,0 +1,9 @@
+fragment SectorTypeInfo on SectorType {
+  sector
+  name
+  industries {
+    industry
+    name
+    isChecked
+  }
+}

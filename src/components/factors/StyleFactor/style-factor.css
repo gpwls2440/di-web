@@ -1,0 +1,137 @@
+
+
+.style-factor > .box .title-wrap > .title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.style-factor > .box .title-wrap {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.style-factor > .box .title-wrap > .title .ico-title > path {
+  stroke: #111;
+}
+
+.button-style-factor-description {
+  position: relative;
+}
+
+.button-style-factor-description:hover > .style-factor-tooltip {
+  display: flex;
+}
+
+.style-factor-tooltip {
+  top: 0px;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  color: #fff;
+}
+
+.style-factor-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 36px;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  z-index: 9;
+}
+
+.style-factor-tooltip .contents {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+
+.style-factor > .box .percent-bar-box {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.style-factor > .box .percent-bar-box > .num {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  padding: 10px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-color:  #F8F8F8;
+}
+
+.style-factor > .box .percent-bar-box > .bar-wrap {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color:  #eee;
+  border-radius: 10px;
+}
+
+.style-factor > .box .percent-bar-box > .bar-wrap > .bar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 10px;
+  background-color:  #FFDC00;
+  border-radius: 10px;
+}
+
+.style-factor > .box > ul {
+  margin-top: 20px;
+  display: grid;
+}
+
+.style-factor > .box > ul li {
+  display: grid;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.style-factor > .box > ul li button {
+  padding: 10px 0;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-factor > .box > ul > li button.active {
+  border: 1px solid #5B86D4;
+  color: #5B86D4;
+}
+
+.style-factor > .box > ul > li button.active > img {
+  margin-right: 4px;
+}
+
+.style-factor > .box > ul > li button:hover {
+  border: 1px solid #5B86D4;
+  color: #5B86D4;
+}
+

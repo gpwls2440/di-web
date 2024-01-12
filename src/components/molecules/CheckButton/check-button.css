@@ -1,0 +1,31 @@
+
+.check-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  z-index: 9;
+}
+
+.check-button > span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url('/svg/checkbox-default.svg') no-repeat;
+}
+.check-button.active > span {
+  background: url('/svg/checkbox-selected.svg') no-repeat;
+}
+
+.check-button .label  {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  line-height: 22px;
+  font-size: 15px;
+  padding-left: 26px;
+  text-align: left;
+}

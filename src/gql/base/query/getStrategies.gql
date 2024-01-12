@@ -1,0 +1,56 @@
+# 전략 선택
+## 테마전략, 나만의 전략, 대가들의 투자 전략
+query getStrategies(
+  $category: StrategyCategoryEnum
+  $status: [StrategyStatusEnum]
+  $keyword: String
+  $orderMethod: StrategyOrderMethod = CUMULATIVE
+  $orderPeriodReturn: StrategyOrderPeriodReturn = MONTH_3
+  $universePreset: UniversePresetEnum
+  $themeSrc: [ThemeSrcEnum!]
+  $themeGroup: [ID!]
+  $isKbPick: Boolean = false
+  $countries: [UniverseCountryEnum!] = [DOMESTIC]
+  $before: String
+  $after: String
+  $first: Int
+  $last: Int
+) {
+  strategies(
+    category: $category
+    status: $status
+    keyword: $keyword
+    orderMethod: $orderMethod
+    orderPeriodReturn: $orderPeriodReturn
+    universePreset: $universePreset
+    themeSrc: $themeSrc
+    themeGroup: $themeGroup
+    isKbPick: $isKbPick
+    countries: $countries
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+  ) {
+    pageInfo {
+      ...PageInfo
+    }
+    edges {
+      node {
+        ... on ThemeStrategyType {
+          ...ThemeStrategiesTypeInfo
+        }
+        ... on MasterStrategyType {
+          ...MasterStrategyListTypeInfo
+        }
+        ... on SectorIndustryStrategyType {
+          ...SectorIndustryStrategyTypeInfo
+        }
+      }
+      cursor
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.pie-chart-wrap {
+  display: flex;
+  width: initial;
+  justify-content: space-between;
+}
+
+
+.pie-chart-wrap > .pie-chart > .recharts-wrapper  {
+  padding-left: 96px;
+}
+
+.pie-chart-wrap > .pie-chart-legend-list {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  width: initial;
+}
+
+.pie-chart-wrap > .pie-chart-legend-list > li {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  height: initial;
+  background-color: transparent;
+  display: flex;
+  height: 42px;
+  padding: 8px 0px;
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.pie-chart-wrap > .pie-chart-legend-list > li > .title-wrap {
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  width: 230px;
+  height: initial;
+  background-color: transparent;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  gap: 11px;
+}
+
+
+
+.pie-chart-wrap > .pie-chart-legend-list > li > .text.value {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  width: 87px;
+}
+
+.pie-chart-wrap > .pie-chart-legend-list > li > .text > .percent-text {
+  color: #222 !important;
+}

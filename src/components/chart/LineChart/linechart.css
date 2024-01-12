@@ -1,0 +1,71 @@
+.line-chart-legend-list {
+  display: flex;
+  width: initial;
+  height: initial;
+  gap: 12px;
+  margin-left: 24px;
+}
+
+.line-chart-legend-list > li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  gap: 4px;
+}
+
+.line-chart-legend-list li .text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  vertical-align: baseline;
+}
+
+.line-chart-tooltip  {
+  width: initial;
+  height: initial;
+  gap: 12px;
+  padding: 20px;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+
+.line-chart-tooltip .title {
+  width: initial;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;  
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.line-chart-tooltip ul {
+  display: flex;
+  flex-direction: column;
+  width: initial;
+  margin-top: 4px;
+}
+
+.line-chart-tooltip li {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  width: 170px;
+  height: initial;
+  background-color: transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.line-chart-tooltip li .text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff;
+}

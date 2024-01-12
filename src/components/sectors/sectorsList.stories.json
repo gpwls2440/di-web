@@ -1,0 +1,200 @@
+{
+    "data": {
+        "sectors": {
+            "sectors": [
+                {
+                    "sector": "ENERGY",
+                    "name": "\uc5d0\ub108\uc9c0",
+                    "industries": [
+                        {
+                            "industry": "ENERGY",
+                            "name": "\uc5d0\ub108\uc9c0",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "MATERIALS",
+                    "name": "\uc18c\uc7ac",
+                    "industries": [
+                        {
+                            "industry": "MATERIALS",
+                            "name": "\uc18c\uc7ac",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "INDUSTRIALS",
+                    "name": "\uc0b0\uc5c5\uc7ac",
+                    "industries": [
+                        {
+                            "industry": "CAPITAL_GOODS",
+                            "name": "\uc790\ubcf8\uc7ac",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "COMMERCIAL_PROFESSIONAL_SERVICES",
+                            "name": "\uc0c1\uc5c5 \ubc0f \uc804\ubb38 \uc11c\ube44\uc2a4",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "TRANSPORTATION",
+                            "name": "\uc6b4\uc1a1",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "CONSUMER_DISCRETIONARY",
+                    "name": "\uc784\uc758\uc18c\ube44\uc7ac",
+                    "industries": [
+                        {
+                            "industry": "AUTOMOBILES_COMPONENTS",
+                            "name": "\uc790\ub3d9\ucc28 \ubc0f \ubd80\ud488",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "CONSUMER_DURABLES_APPAREL",
+                            "name": "\ub0b4\uad6c \uc18c\ube44\uc7ac \ubc0f \uc758\ub958",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "CONSUMER_SERVICES",
+                            "name": "\uc18c\ube44\uc790 \uc11c\ube44\uc2a4",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "RETAILING",
+                            "name": "\uc784\uc758\uc18c\ube44\uc7ac \uc720\ud1b5 \ubc0f \uc18c\ub9e4",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "CONSUMER_STAPLES",
+                    "name": "\ud544\uc218\uc18c\ube44\uc7ac",
+                    "industries": [
+                        {
+                            "industry": "FOOD_STAPLES_RETAILING",
+                            "name": "\ud544\uc218\uc18c\ube44\uc7ac \uc720\ud1b5 \ubc0f \uc18c\ub9e4 ",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "FOOD_BEVERAGE_TOBACCO",
+                            "name": "\uc2dd\ud488, \uc74c\ub8cc \ubc0f \ub2f4\ubc30",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "HOUSEHOLD_PERSONAL_PRODUCTS",
+                            "name": "\uac00\uc815\uc6a9\ud488 \ubc0f \uac1c\uc778\uc6a9\ud488",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "HEALTH_CARE",
+                    "name": "\ud5ec\uc2a4\ucf00\uc5b4",
+                    "industries": [
+                        {
+                            "industry": "HEALTH_CARE_EQUIPMENT_SERVICES",
+                            "name": "\ud5ec\uc2a4\ucf00\uc5b4 \uc7a5\ube44 \ubc0f \uc11c\ube44\uc2a4",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "PHARMACEUTICALS_BIOTECHNOLOGY_LIFE_SCIENCES",
+                            "name": "\uc81c\uc57d, \uc0dd\uba85\uacf5\ud559 \ubc0f \uc0dd\uba85\uacfc\ud559",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "FINANCIALS",
+                    "name": "\uae08\uc735",
+                    "industries": [
+                        {
+                            "industry": "BANKS",
+                            "name": "\uc740\ud589",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "DIVERSIFIED_FINANCIALS",
+                            "name": "\uae08\uc735 \uc11c\ube44\uc2a4",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "INSURANCE",
+                            "name": "\ubcf4\ud5d8",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "INFORMATION_TECHNOLOGY",
+                    "name": "\uc815\ubcf4\uae30\uc220",
+                    "industries": [
+                        {
+                            "industry": "SOFTWARE_SERVICES",
+                            "name": "\uc18c\ud504\ud2b8\uc6e8\uc5b4 \ubc0f \uc11c\ube44\uc2a4",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "TECHNOLOGY_HARDWARE_EQUIPMENT",
+                            "name": "\uae30\uc220 \ud558\ub4dc\uc6e8\uc5b4 \ubc0f \uc7a5\ube44",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "SEMICONDUCTORS_SEMICONDUCTOR_EQUIPMENT",
+                            "name": "\ubc18\ub3c4\uccb4 \ubc0f \ubc18\ub3c4\uccb4 \uc7a5\ube44",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "COMMUNICATIONS",
+                    "name": "\ud1b5\uc2e0 \uc11c\ube44\uc2a4",
+                    "industries": [
+                        {
+                            "industry": "TELECOMMUNICATION_SERVICES",
+                            "name": "\ud1b5\uc2e0 \uc11c\ube44\uc2a4",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "MEDIA_ENTERTAINMENT",
+                            "name": "\ubbf8\ub514\uc5b4 \ubc0f \uc5d4\ud130\ud14c\uc778\uba3c\ud2b8",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "UTILITIES",
+                    "name": "\uc720\ud2f8\ub9ac\ud2f0",
+                    "industries": [
+                        {
+                            "industry": "UTILITIES",
+                            "name": "\uc720\ud2f8\ub9ac\ud2f0",
+                            "isChecked": null
+                        }
+                    ]
+                },
+                {
+                    "sector": "REAL_ESTATE",
+                    "name": "\ubd80\ub3d9\uc0b0",
+                    "industries": [
+                        {
+                            "industry": "REAL_ESTATE",
+                            "name": "\uc8fc\uc2dd\ub9ac\uce20",
+                            "isChecked": null
+                        },
+                        {
+                            "industry": "REAL_ESTATE_MANAGEMENT_DEVELOPMENT",
+                            "name": "\ubd80\ub3d9\uc0b0 \uad00\ub9ac \ubc0f \uac1c\ubc1c",
+                            "isChecked": null
+                        }
+                    ]
+                }
+            ],
+            "errors": null
+        }
+    }
+}

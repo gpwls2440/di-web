@@ -1,0 +1,49 @@
+{
+  "histogram": [
+    {
+      "height": 45,
+      "volume": 274,
+      "totalCount": 2250,
+      "inActive": true
+    },
+    {
+      "height": 100,
+      "volume": 605,
+      "totalCount": 1976,
+      "inActive": true
+    },
+    {
+      "height": 92,
+      "volume": 558,
+      "totalCount": 1371,
+      "inActive": true
+    },
+    {
+      "height": 72,
+      "volume": 439,
+      "totalCount": 813,
+      "inActive": false
+    },
+    {
+      "height": 47,
+      "volume": 289,
+      "totalCount": 374,
+      "inActive": false
+    },
+    {
+      "height": 13,
+      "volume": 82,
+      "totalCount": 85,
+      "inActive": false
+    },
+    {
+      "height": 4,
+      "volume": 3,
+      "totalCount": 3,
+      "inActive": false
+    }
+  ],
+  "startIndex": 3,
+  "startTotalCount" : 813, 
+  "value": 4
+}

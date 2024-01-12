@@ -1,0 +1,108 @@
+
+# 전략 보관함
+## 저장된 전략 카드 데이터
+fragment MyStrategyInfo on MyStrategyType {
+  id
+  portfolioId
+  category
+  name
+  status
+  strategy {
+    ... on ThemeStrategyType {
+      ...ThemeStrategyTypeInfo
+    }
+    ... on MasterStrategyType {
+      ...MasterStrategyTypeInfo
+    }
+    ... on SectorIndustryStrategyType {
+      ...SectorIndustryStrategyTypeInfo
+    }
+  }
+  isSimple
+  isActiveKbContract
+  isForwardAvailable
+  universePreset {
+    universePreset
+    name
+  }
+  universe {
+    ...UniverseInfo
+  }
+  simulationOption {
+    ...SimulationOptionInfo
+  }
+  rebalancingInfo {
+    recentTs
+    cnt
+  }
+  baseStrategyName
+  returnSummary {
+    ...MyStrategyReturnSummaryTypeInfo
+  }
+  sectorIndustrySummary {
+    ...SectorIndustrySummaryTypeInfo
+  }
+  whitelist {
+    ccid
+    weight
+    isAdd
+  }
+  createdAt
+  __typename
+}
+
+
+## 저장된 전략 카드 데이터 > 모의투자 성과 / 기준일
+fragment MyStrategyReturnSummaryTypeInfo on MyStrategyReturnSummaryType {
+  forward {
+    ...MyStrategyReturnSummaryItemInfo
+  }
+  backtest {
+    ...MyStrategyReturnSummaryItemInfo
+  }
+  baseStrategyCumulative
+  benchmarkCumulative
+}
+
+fragment MyStrategyReturnSummaryItemInfo on MyStrategyReturnSummaryItem {
+  baseDate {
+    ...BaseDateInfo
+  }
+  returnSummary {
+    ...ReturnSummaryTypeInfo
+  }
+}
+
+## 저장된 전략 카드 데이터 > 
+fragment SimulationOptionInfo on SimulationOptionType {
+  booksize
+  startDate
+  optimization
+  rebalancing
+  excludeAdministration
+  marketCapLimit
+  tradingAmountLimit
+}
+
+
+## 섹터 정보
+fragment SectorIndustrySummaryTypeInfo on SectorIndustrySummaryType {
+  totalCnt
+  info {
+    sector
+    sectorName
+    industries
+    industriesName
+    isSelectAll
+  }
+}
+
+
+fragment MyStrategyReturnSummaryItemInfo on MyStrategyReturnSummaryItem {
+  baseDate {
+    ...BaseDateInfo
+  }
+  returnSummary {
+    ...ReturnSummaryTypeInfo
+  }
+}

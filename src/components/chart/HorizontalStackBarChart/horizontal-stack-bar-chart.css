@@ -1,0 +1,50 @@
+.horizontal-stack-bar-chart {
+  width: 100%;
+}
+
+.horizontal-stack-bar-chart .title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  }
+
+.horizontal-stack-bar-chart ul {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+  height: 28px;
+}
+
+.horizontal-stack-bar-chart ul li {
+  position: absolute;
+  top: 0px
+}
+
+.horizontal-stack-bar-chart .gridline {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 94px;
+  top: -3px;
+}
+
+.horizontal-stack-bar-chart .gridline > span {
+  opacity: 0;
+  width: 30px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  animation: gridline 1s 1s forwards;
+}
+
+@keyframes gridline {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1;
+  }
+}

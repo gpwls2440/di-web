@@ -1,0 +1,56 @@
+.status > ul {
+  display: flex;
+}
+
+.status > ul > li {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+
+
+.status > ul > li::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 28px;
+  background-color: #ddd;
+  top: 12px;
+  left: 0px;
+}
+
+
+.status > ul > li:first-child:before {
+  content: '';
+  display: none;
+}
+
+
+.status > ul > li .status-edit {
+  color: #ddd;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px; 
+}
+
+.status > ul > li .percent-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.status > ul > li > .status-title {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  color: #888;
+}
+
+

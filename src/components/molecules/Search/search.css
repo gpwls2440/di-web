@@ -1,0 +1,177 @@
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-wrap > .button {
+  opacity: 1;
+	transition: opacity 0.3s ease-in-out 0.3s;
+  position: relative;
+  z-index: 22;
+}
+
+.search-wrap.active > .button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-wrap > .search-container {
+  z-index: 20;
+  position: absolute;
+  top:0px;
+  right: 0px;
+}
+
+.search-wrap > .search-container > .search  {
+  float: right;
+  width: 250px;
+  background: transparent;
+  border-radius: 4px;
+  border-color: rgba(238,238,238,1);
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+	transition: opacity 0.3s ease-in-out 0.3s;
+}
+
+.search-wrap.active > .search-container > .search {
+  opacity: 1;
+  background: #fff;
+}
+
+.search-wrap.isOpen > .search-container > .search {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.search-wrap > .search-container >  .search .search-input-wrap {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 8px;
+  gap: 4px;
+  box-sizing: initial;
+}
+  
+.search-wrap > .search-container > .search .search-input-wrap > .ico-search-button {
+  display: flex;
+  align-items: center;
+}
+ 
+.search-wrap > .search-container > .search .search-input-wrap > .search-input {
+  display: flex;
+  align-items: center;
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: #222;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0%;
+  height: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.search-wrap.active > .search-container >  .search .search-input {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.search-wrap.active > .search-container >  .search .button-close {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+
+
+.search-wrap > .search-container >  .search .recent-searches-wrap {
+  display: none;
+}
+
+.search-wrap.isOpen > .search-container > .search .recent-searches-wrap {
+  display: block;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
+.recent-searches-wrap > .recent-searches-button-wrap {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.recent-searches-wrap > .recent-searches-button-wrap > .keyword-title {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: #888;
+}
+
+.recent-searches-wrap > .recent-searches-button-wrap > .button {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: #888;
+}
+
+.recent-searches-wrap > .recent-searches-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 7px 4px 8px;
+  height: 32px;
+}
+
+.recent-searches-wrap > .recent-searches-list li > .recent-searches-list-keyword {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  margin-right: 8px;
+}
+
+.recent-searches-wrap > .recent-searches-list li > .recent-searches-list-date {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14.96px;
+  color: #888;
+  padding-right: 42px;
+}
+
+.recent-searches-wrap > .recent-searches-list li > .recent-searches-list-delete-button {
+  position: absolute;
+  right: 7px;
+  top: 7px
+}
+
+
+
+
+
+
+
+
+
+
+
+

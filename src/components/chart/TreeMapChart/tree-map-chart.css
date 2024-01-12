@@ -1,0 +1,73 @@
+.tree-map-chart-tooltip  {
+  width: initial;
+  height: initial;
+  gap: 12px;
+  padding: 20px;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+
+
+.tree-map-chart-tooltip ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: initial;
+  margin-top: 4px;
+}
+
+.tree-map-chart-tooltip li {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  height: initial;
+  background-color: transparent;
+  padding: 4px;
+  text-align: center;
+}
+
+.tree-map-chart-tooltip ul li.text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff !important;
+  opacity: 1;
+}
+
+
+/* .tree-map-chart-tooltip  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 102px;
+  height: 62px;
+  border-radius: 3px;
+  background-color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 1;
+}
+
+.tree-map-chart-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  z-index: 9;
+}
+
+.tree-map-chart-tooltip  .contents {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #fff;
+} */

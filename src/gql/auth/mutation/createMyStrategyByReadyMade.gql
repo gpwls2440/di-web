@@ -1,0 +1,46 @@
+# 전략 생성 - 레디메이드
+
+## isSimple 간편 편집 여부
+## strategyId 전략 ID
+## simulationOptionScreening 
+### startDate: Float!
+### 시작일, unixtimestamp
+### optimization: StrategyOptimizationEnum!
+### 최적화 기준
+### rebalancing: StrategyRebalancingOptionEnum = null
+### 리밸런싱 옵션
+### excludeAdministration: Boolean = true
+### 관리종목 제외 여부
+### tradingAmountLimit: StrategyAmountEnum = ZERO
+### 시가총액 제외 %
+### marketCapLimit: StrategyMarketCapEnum = ZERO
+### 거래대금 제외 금액
+### booksize: Float!
+### 투자금액
+### blacklist: [String!]!
+### 제외한 종목 ccid
+### whitelist: [WhitelistInputItem!]!
+### 추가한 종목 ccid, 비중
+### universePreset: UniversePresetEnum
+### 선택한 유니버스 프리셋
+### industries: [IndustryEnum!]
+### 선택한 산업 List
+### factors: [FactorInputItem!]!
+### 선택한 팩터 List
+
+mutation createMyStrategyByReadyMade(
+  $isSimple: Boolean!
+  $simulationOptionScreening: SimulationOptionScreeningInput!
+  $strategyId: ID
+) {
+  createMyStrategyByReadyMade(
+    isSimple: $isSimple
+    simulationOptionScreening: $simulationOptionScreening
+    strategyId: $strategyId
+  ) {
+    myStrategyId
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

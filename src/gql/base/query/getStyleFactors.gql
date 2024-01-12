@@ -1,0 +1,29 @@
+# 투자스타일
+query getStyleFactors($country: UniverseCountryEnum = DOMESTIC) {
+  styleFactors(country: $country) {
+    styleFactors {
+      simplePrest {
+        low {
+          min
+          max
+        }
+        middle {
+          min
+          max
+        }
+        high {
+          min
+          max
+        }
+      }
+      styleFactors {
+        style {
+          style
+          name
+          description
+        }
+        cmName
+      }
+    }
+  }
+}

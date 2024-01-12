@@ -1,0 +1,45 @@
+.data-table table {
+  width: 100%;
+  border-top: 1px solid #C1C1C1;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; 
+}
+
+.data-table table th {
+  background-color: #f8f8f8;
+  height: 30px;
+  padding: 6px 8px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  color: #888;
+}
+
+.data-table table td {
+  padding: 6px 8px;
+  background-color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+
+.data-table table tbody th {
+  height: 32px;
+}
+
+.data-table table tbody td {
+  height: 32px;
+}
+
+.data-table table thead th .table-icon-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+      "strategyStyle": {
+          "info": {
+              "strategy": {
+                  "size": {
+                      "name": "\uc2dc\ucd1d&\uc790\uc0b0",
+                      "value": 1.35
+                  },
+                  "value": {
+                      "name": "\uac00\uce58",
+                      "value": 2.6
+                  },
+                  "momentum": {
+                      "name": "\uc131\uc7a5",
+                      "value": 2.83
+                  },
+                  "quality": {
+                      "name": "\ud004\ub9ac\ud2f0",
+                      "value": 3.26
+                  },
+                  "volatility": {
+                      "name": "\ubcc0\ub3d9\uc131",
+                      "value": 2.41
+                  },
+                  "beta": {
+                      "name": "\uc2dc\uc7a5 \ubbfc\uac10\ub3c4",
+                      "value": 3.06
+                  },
+                  "dividend": {
+                      "name": "\ubc30\ub2f9",
+                      "value": 2.85
+                  },
+                  "surprise": {
+                      "name": "\uc5b4\ub2dd \uc11c\ud504\ub77c\uc774\uc988",
+                      "value": 2.51
+                  },
+                  "liquidity": {
+                      "name": "\uc218\uae09",
+                      "value": 2.44
+                  }
+              },
+              "strategyName": "\ud504\ub9ac\uc14b(Pre-set)",
+              "benchmark": {
+                  "size": {
+                      "name": "\uc2dc\ucd1d&\uc790\uc0b0",
+                      "value": 3.35
+                  },
+                  "value": {
+                      "name": "\uac00\uce58",
+                      "value": 3.04
+                  },
+                  "momentum": {
+                      "name": "\uc131\uc7a5",
+                      "value": 3.03
+                  },
+                  "quality": {
+                      "name": "\ud004\ub9ac\ud2f0",
+                      "value": 3.01
+                  },
+                  "volatility": {
+                      "name": "\ubcc0\ub3d9\uc131",
+                      "value": 3.19
+                  },
+                  "beta": {
+                      "name": "\uc2dc\uc7a5 \ubbfc\uac10\ub3c4",
+                      "value": 3.0
+                  },
+                  "dividend": {
+                      "name": "\ubc30\ub2f9",
+                      "value": 3.04
+                  },
+                  "surprise": {
+                      "name": "\uc5b4\ub2dd \uc11c\ud504\ub77c\uc774\uc988",
+                      "value": 3.04
+                  },
+                  "liquidity": {
+                      "name": "\uc218\uae09",
+                      "value": 3.07
+                  }
+              },
+              "benchmarkName": "KOSPI",
+              "baseDate": {
+                  "start": null,
+                  "end": 1702220400000.0
+              }
+          },
+          "errors": null
+      }
+  }
+}

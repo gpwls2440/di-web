@@ -1,0 +1,17 @@
+# 전략 선택 > KB테마 > 테마 키워드 선택
+query getThemeGroups(
+  $status: [ThemeGroupStatusEnum!]!
+  $countries: [UniverseCountryEnum!] = [DOMESTIC]
+) {
+  themeGroups(status: $status, countries: $countries) {
+    themeGroups {
+      id
+      name
+      remarks
+      status
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

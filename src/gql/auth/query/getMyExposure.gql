@@ -1,0 +1,44 @@
+# 내 전략 섹터, 산업 종목 조회
+## 백테스트 결과 > 섹터/업종 구성 > PieChart
+
+query getMyExposure($id: ID!, $simulationType: SimulationTypeEnum!) {
+  myExposure(myStrategyId: $id, simulationType: $simulationType) {
+    myExposure {
+      myStrategy {
+        sectors {
+          name
+          weight
+        }
+        industries {
+          name
+          weight
+        }
+        holdings {
+          name
+          weight
+        }
+      }
+      strategy {
+        sectors {
+          name
+          weight
+        }
+        industries {
+          name
+          weight
+        }
+        holdings {
+          name
+          weight
+        }
+      }
+      baseDate {
+        start
+        end
+      }
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}

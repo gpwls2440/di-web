@@ -1,0 +1,10 @@
+query getSectors {
+  sectors {
+    sectors {
+      ...SectorTypeInfo
+    }
+    errors {
+      ...ErrorInfo
+    }
+  }
+}
