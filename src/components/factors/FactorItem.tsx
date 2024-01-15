@@ -1,9 +1,9 @@
 import CheckBox from '@components/atoms/CheckBox';
 import IconToolTip from '@components/atoms/IconTooltip';
 import Title from '@components/atoms/Title';
-import { factorCheckedAtom } from '@jotai/factor';
-import { useAtom } from 'jotai';
-import { ChangeEvent } from 'react';
+import { useChecks } from '@hooks/useChecks';
+import { CheckType } from '@interface/common';
+import React, { ChangeEvent } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 interface FactorItem {
@@ -11,23 +11,29 @@ interface FactorItem {
   displayName: string | undefined;
   description: string | null | undefined;
   index: number;
+  checkBoxesData: CheckType;
 }
 
-export default function FactorItem(props: FactorItem) {
-  const { cmName, displayName, description, index } = props;
-  const [factorChecked, setFactorChecked] = useAtom(factorCheckedAtom);
+export default React.memo(function FactorItem(props: FactorItem) {
+  const { cmName, displayName, description, index, checkBoxesData } = props;
+
+  const { checkboxes, handleDirectChecked } = useChecks(checkBoxesData);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     e.stopPropagation();
     const { value: cnName, checked } = e.target;
-    setFactorChecked({ ...factorChecked, [cnName]: !!checked });
+
+    handleDirectChecked(cnName, !!checked);
   };
+
   return (
     <CheckBox
       onChange={handleChange}
       checkBoxWrapClassName='mgt16 bottom-line'
       key={uuidv4()}
-      value={`cm-${cmName}`}
-      id={`cm-${cmName}` ?? ''}
+      value={cmName}
+      id={`${cmName}` ?? ''}
+      defaultChecked={checkboxes[cmName ?? '']}
       label={
         <Title
           titleClass='sectors-title'
@@ -45,4 +51,4 @@ export default function FactorItem(props: FactorItem) {
       }
     />
   );
-}
+});
